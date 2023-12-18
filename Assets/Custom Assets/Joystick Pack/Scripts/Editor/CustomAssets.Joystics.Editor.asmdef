@@ -1,0 +1,18 @@
+{
+    "name": "CustomAssets.Joystics.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:abfe14dc60514e5fa3aadf53bfaa8585"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
