@@ -3,15 +3,15 @@ namespace ParagorGames.TestProject.Player
     public class JoystickPlayerInputHandler : IPlayerInputHandler
     {
         private readonly Joystick _joystick;
-        private readonly BasePlayerView _playerView;
+        private readonly IMovable _movable;
 
-        public JoystickPlayerInputHandler(Joystick joystick, BasePlayerView playerView)
+        public JoystickPlayerInputHandler(Joystick joystick, IMovable movable)
         {
             _joystick = joystick;
-            _playerView = playerView;
+            _movable = movable;
 
-            _joystick.BeginMove += _playerView.BeginMove;
-            _joystick.EndMove += _playerView.EndMove;
+            _joystick.BeginMove += _movable.BeginMove;
+            _joystick.EndMove += _movable.EndMove;
         }
         
         public void UpdateInput()
@@ -21,7 +21,7 @@ namespace ParagorGames.TestProject.Player
                 return;
             }
             
-            _playerView.Move(_joystick.Direction);
+            _movable.Move(_joystick.Direction);
         }
     }
 }

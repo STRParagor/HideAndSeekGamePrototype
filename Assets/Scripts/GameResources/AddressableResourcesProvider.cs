@@ -7,7 +7,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.Assertions;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace CHorseGames.ToiletWar.GameResources
+namespace ParagorGames.GameResources
 {
     public class AddressableResourcesProvider<T> : IResourcesProvider<T> where T : class
     {

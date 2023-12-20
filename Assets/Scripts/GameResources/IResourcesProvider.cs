@@ -1,7 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 
-namespace CHorseGames.ToiletWar.GameResources
+namespace ParagorGames.GameResources
 {
     public interface IResourcesProvider<T>
     {
